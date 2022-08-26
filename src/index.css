@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  text-transform: capitalize;
+
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.quiz
+{
+  width: 100%;
+}
+.quiz-large
+{
+  width: 1200px;
+}
+
+.quiz-small {
+  width: 500px;
+}
+.quiz-correct 
+{
+  font-size: 1.3rem ;
+  letter-spacing: 0.1rem;
+}
+.btn-warning
+{
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+.wrapper
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+background-color:rgb(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+z-index: 999;
+}
+.model
+{
+  padding: 3rem;
+}
+.model > *{
+  letter-spacing: 0.15rem;
+}
+.btn-primary:active , .btn-primary:focus , .btn-primary:hover
+
+{
+filter: brightness(1.2);
+  box-shadow: none !important;
+
+}
+@media screen and (max-width :575.98px)
+{
+.quiz-small
+{
+  max-width: 400px;
+}
+.quiz-large
+{
+  max-width: 400px;
+}
+.quiz-correct{
+  font-size: 1.1rem;
+}
+h2{
+  font-size: 1.2rem;
+}
+.model
+{
+  padding: 2rem;
+}
+}
+
+@media screen and (min-width :576px) and (max-width :767.98px)
+{
+  .quiz-large{
+    max-width: 500px;
+  }
+.quiz-correct{
+  font-size: 1.2rem;
+}
+h2{
+  font-size: 1.3rem;
+}
+
+
+}
+@media screen and (min-width :768px) and (max-width :991.98px)
+{
+    .quiz-large{
+    max-width: 700px;
+  }
+
+
+}
+@media screen and (min-width :992px) and (max-width :1199.98px)
+{
+  .quiz-large{
+    max-width: 800px;
+  }
+}
+@media screen and (min-width :1200px) and (max-width :1399.98px)
+{
+   .quiz-large{
+    max-width: 900px;
+  }
+}
